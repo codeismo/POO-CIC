@@ -1,0 +1,17 @@
+Juego de Gato
+**VARIABLE GOBLAL char tablero[9] = [ '-' , ' -' , '-' , ' -' , '-' ,' -' ,'-' ,' -' , '-'  ]
+void funcion imprimir_tablero() 
+ - - -
+ - - -
+ - - -
+void funcion tirar(char simbolo, int posicion )
+	colocarl el simbolo en la posicion indicada
+int funcion validar_tiro(int posicion)-devuelve 0 error, 1 tiro bueno
+	revisa si la posicion es valida
+	revisa que la posicion este libre
+int funcion ganar( )-devuelve 1 gano  y 0 en otro caso
+	revisar si alguien gano PRIMER CASO
+	1.- Si tablero[0] != '-' Y 
+	         tablero[0] == tablero[1] && tablero[0] == tablero[2]  
+	
+	
