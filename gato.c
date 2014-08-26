@@ -65,8 +65,28 @@ int alguien_gano(){
 }
 
 int main(){
-    imprimir_tablero();
-    tirar('x', 4);
-    imprimir_tablero();
+    int posicion, tiro_valido, ganar;
+
+    /*Si el tiro esta mal (tiro_valido==0)
+    ejecuta el ciclo do otra vez*/
+    do{//juego continua
+
+        do{//tiro incorrecto
+            printf("\nDonde tiras Jugador 1: ");
+            scanf("%d", &posicion);
+            tiro_valido = validar_tiro(posicion);
+        }while(tiro_valido==0);
+        tirar('x', posicion);
+        imprimir_tablero();
+        ganar=alguien_gano();
+
+    }while(ganar==0);
+
+    if(ganar==2){
+        printf("\nEl tablero esta lleno");
+    }else{
+        printf("'\nFelicidades");
+    }
+
     return 0;
 }
