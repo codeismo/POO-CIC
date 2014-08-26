@@ -1,0 +1,3 @@
+1.-Decir si una letra es vocal o consonante
+2.-Operaciones - imprime las operaciones
+3.-Calculadora
