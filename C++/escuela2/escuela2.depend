@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1353754660 source:c:\users\aula e3\documents\codeblocks worspace\escuela2\main.cpp
+	<iostream>
+
+1409190578 source:c:\users\aula e3\documents\codeblocks worspace\escuela2\profesor.cpp
+	<iostream>
+	"Profesor.h"
+
+1409190702 c:\users\aula e3\documents\codeblocks worspace\escuela2\profesor.h
+	<iostream>
+
