@@ -1,1 +1,5 @@
 1.-Programa de areas y volumenes. Haciendo el menu con switch
+y agregar un while para que el menu se repita si la opcion es invalida
+2.- piramides que hicimos en clase pero usando while
+3.-rombo.c y triangulo.c con asteriscos 
+(tareas_semana2_asteriscos.txt) USANDO FOR
