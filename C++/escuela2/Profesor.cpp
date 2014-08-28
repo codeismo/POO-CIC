@@ -2,6 +2,21 @@
 #include "Profesor.h"
 using namespace std;
 
+/*Constructor*/
+Profesor::Profesor(){
+    nombre = "indefinido";
+    materia = "ninguna";
+    edad = 20;
+    escuela = "CIC-IPN";
+}
+
+Profesor::Profesor(string n, int e, string m){
+    nombre = n;
+    edad = e;
+    materia = m;
+    escuela = "CIC-IPN";
+}
+
 /* El profesor se presenta */
 void Profesor::presentarse(){
     cout<<"Mi nombre es "<<nombre<<", mi edad es "<<edad<<" y doy la materia "<<materia<<endl;

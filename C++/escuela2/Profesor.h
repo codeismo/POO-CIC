@@ -7,6 +7,9 @@ using namespace std;
 
 class Profesor{
 public:
+    /*Declare mi constructor*/
+    Profesor();
+    Profesor(string n, int e, string m);
     void presentarse();
     void darClase();
     string getNombre();
