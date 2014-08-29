@@ -1,0 +1,11 @@
+char tablero[9] = { '-', '-', '-', '-', '-', '-' , '-', '-', '-'  };
+void imprimir_tablero(); usar un for
+	- - -
+                  - - -
+                  - - -
+void tirar() ;
+         1.-Pedir al usuario la posicion (0-8)
+         2.-Pedir al usuario el simbolo con el que va tirar ( 'o', 'x')
+         3.-tablero[7] = 'x'
+int ganar(); 
+       Si alguien gano devuelve 1, si el tablero lleno 0, 2 continua
