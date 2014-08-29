@@ -1,0 +1,4 @@
+tareas:
+
+1.- Piramide de asterisco invertida con while
+2.- Clase Auto

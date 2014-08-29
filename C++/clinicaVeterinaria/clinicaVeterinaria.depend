@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1353754660 source:c:\users\aula e3\documents\codeblocks worspace\clinicaveterinaria\main.cpp
+	<iostream>
+
+1409276539 source:c:\users\aula e3\documents\codeblocks worspace\clinicaveterinaria\fecha.cpp
+	<iostream>
+	"Fecha.h"
+
+1409275748 c:\users\aula e3\documents\codeblocks worspace\clinicaveterinaria\fecha.h
+
