@@ -9,7 +9,13 @@ char tablero[9] = {'-', '-', '-', '-', '-', '-', '-', '-', '-'};
 
 */
 void imprimir_tablero(){
-
+    int posicion;
+    for(posicion=0; posicion<9; posicion++){
+        printf("%c", tablero[posicion]);
+        if(posicion==2 || posicion==5 || posicion==8){
+            printf("\n");
+        }
+    }
 }
 
 /*Pide al usuario la posicion y el simbolo para tirar
@@ -27,6 +33,6 @@ int ganar(){
 
 
 int main(){
-
+    imprimir_tablero();
     return 0;
 }
