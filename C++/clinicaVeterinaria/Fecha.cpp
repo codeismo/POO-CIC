@@ -56,12 +56,15 @@ int Fecha::getAnio(){
 }
 
 int Fecha::estableceFecha(int d, int m , int a){
-
+  //this->setDia(d)
+  //(*this).setDia(d)
+  /*
     if ( setDia(d)==1 && setMes(m)==1 && setAnio(a)==1 ){
         return 1;
     }else{
         return 0;
     }
+    */
 }
 
 /*EJ: 27 - 08- 2014*/

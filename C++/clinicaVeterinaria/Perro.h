@@ -1,25 +1,22 @@
 #include <iostream>
+#include "Animal.h"
 
 using namespace std;
 
 #ifndef PERRO_H_INCLUDED
 #define PERRO_H_INCLUDED
 
-class Perro{
+class Perro : public Animal{
 private:
-    string nombre;
-    Fecha fechaNacimiento;
-    int enfermo; /*1-enfermo y 0-sano*/
+    string raza;
 public:
+    /*************** CONSTRUCTORES ***************/
     Perro();
-    void enfermar();
-    void sanar();
-    string getNombre();
-    Fecha getFechaNacimiento();
-    int getEnfermo();
-    int setNombre( string n );
-    int setFechaNacimiento( Fecha f );
-    int setEnfermo(int e);
+    /************* GETTERS Y SETTERS *************/
+    string getRaza();
+    int setRaza( string r );
+    /************ METODOS DE FUNCIONALIDAD ***********/
+    void ladrar();
 };
 
 #endif // PERRO_H_INCLUDED

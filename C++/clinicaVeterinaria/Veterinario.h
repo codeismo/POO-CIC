@@ -1,5 +1,6 @@
 #include <iostream>
-#include "Perro.h"
+#include "Animal.h"
+#include "Fecha.h"
 
 using namespace std;
 
@@ -9,12 +10,21 @@ using namespace std;
 class Veterinario{
 private:
     string nombre;
+    string cedulaProfesional;
+    Fecha fechaContratacion;
 public:
+    /*************** CONSTRUCTORES ***************/
     Veterinario();
-    void curarPerro(Perro p);
+    Veterinario(string n, string cp, Fecha f);
+    /************* GETTERS Y SETTERS *************/
+    string getNombre();
+    string getCedulaProfesional();
+    Fecha getFechaContratacion();
+    int setNombre( string n );
+    int setCedulaProfesional( string n );
+    int setFechaContratacion( Fecha f );
+    /************ METODOS DE FUNCIONALIDAD ***********/
+    void curarAnimal(Animal a);
 };
-
-
-
 
 #endif // VETERINARIO_H_INCLUDED
