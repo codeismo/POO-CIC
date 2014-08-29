@@ -49,7 +49,8 @@ int Fecha::getAnio(){
 }
 
 int Fecha::estableceFecha(int d, int m , int a){
-    if (setDia(d)==1 && setMes(m)==1 && setAnio(a)==1 ){
+
+    if ( setDia(d)==1 && setMes(m)==1 && setAnio(a)==1 ){
         return 1;
     }else{
         return 0;
@@ -61,4 +62,7 @@ void Fecha::imprimeFechaNumerica(){
     cout<<dia<<" - "<<mes<<" - "<<anio<<endl;
 }
 
-void Fecha::imprimeFechaEstandar(){}/*27 de Agosto de 2014*/
+/*27 de Agosto de 2014*/
+void Fecha::imprimeFechaEstandar(){
+
+}

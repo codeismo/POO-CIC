@@ -1,7 +1,12 @@
+#include <iostream>
+
+using namespace std;
+
 #ifndef FECHA_H_INCLUDED
 #define FECHA_H_INCLUDED
 
 class Fecha{
+    friend string nombreMes(Fecha f);
 private:
     int dia;
     int mes;
