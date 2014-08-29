@@ -34,7 +34,10 @@
 		</Compiler>
 		<Unit filename="Fecha.cpp" />
 		<Unit filename="Fecha.h" />
+		<Unit filename="Perro.h" />
+		<Unit filename="Veterinario.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="util.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
