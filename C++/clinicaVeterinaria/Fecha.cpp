@@ -3,6 +3,13 @@
 
 using namespace std;
 
+
+Fecha::Fecha(){
+    setDia(1);
+    setMes(1);
+    setAnio(1920);
+}
+
 /*De 1 a 31
 devuelve 1 si se establece el dia y 0 sino*/
 int Fecha::setDia(int d){

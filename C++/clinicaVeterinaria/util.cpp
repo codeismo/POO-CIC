@@ -1,9 +1,10 @@
 #include <iostream>
+#include "Fecha.h"
 
 using namespace std;
 
-string nombreMes(int m){
-    switch(m){
+string nombreMes(Fecha f){
+    switch( f.mes ){
     case 1: return "Enero";
     case 2: return "Febrero";
     case 3: return "Marzo";

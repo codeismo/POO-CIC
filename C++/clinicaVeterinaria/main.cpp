@@ -1,13 +1,16 @@
 #include <iostream>
 #include "Fecha.h"
 
-
 using namespace std;
 
 int main()
 {
-    Fecha f1;
-    cout<<nombreMes(f1);
+    Fecha fecha_1;
+    string elMes;
+    fecha_1.imprimeFechaNumerica();
 
+    elMes = nombreMes( fecha_1 );
+
+    cout <<elMes;
     return 0;
 }

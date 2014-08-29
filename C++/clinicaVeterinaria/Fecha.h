@@ -6,12 +6,13 @@ using namespace std;
 #define FECHA_H_INCLUDED
 
 class Fecha{
-    friend string nombreMes(Fecha f);
+friend string nombreMes(Fecha f);
 private:
     int dia;
     int mes;
     int anio;
 public:
+    Fecha();
     int setDia(int d);/*De 1 a 31*/
     int setMes(int m);/*De 1 a 12*/
     int setAnio(int a);/*de 1920 a 2014*/
