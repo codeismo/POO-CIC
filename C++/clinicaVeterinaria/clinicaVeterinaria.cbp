@@ -32,16 +32,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="Animal.cpp" />
-		<Unit filename="Animal.h" />
 		<Unit filename="Fecha.cpp" />
 		<Unit filename="Fecha.h" />
-		<Unit filename="Perro.cpp" />
-		<Unit filename="Perro.h" />
 		<Unit filename="Veterinario.cpp" />
 		<Unit filename="Veterinario.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="util.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

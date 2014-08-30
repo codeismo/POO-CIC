@@ -21,7 +21,9 @@ void imprimir_tablero(){
 /*Pide al usuario la posicion y el simbolo para tirar
 modifica el tablero con el tiro del jugador*/
 void tirar(){
-
+    //pedir al usuario simbolotirar
+    //pedir la posicion
+    //modificar el tablero
 }
 
 /*Revisa en el tablero y si alguien gana devuelve 1

@@ -1,5 +1,4 @@
 #include <iostream>
-#include "Animal.h"
 #include "Fecha.h"
 
 using namespace std;
@@ -24,7 +23,7 @@ public:
     int setCedulaProfesional( string n );
     int setFechaContratacion( Fecha f );
     /************ METODOS DE FUNCIONALIDAD ***********/
-    void curarAnimal(Animal a);
+    void mostrarInformacion();
 };
 
 #endif // VETERINARIO_H_INCLUDED

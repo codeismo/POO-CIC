@@ -1,65 +1,21 @@
 # depslib dependency file v1.0
-1353754660 source:c:\users\aula e3\documents\codeblocks worspace\clinicaveterinaria\main.cpp
+1409366625 source:c:\users\aula e3\documents\codeblocks worspace\clinicaveterinaria\main.cpp
 	<iostream>
+	"Fecha.h"
+	"Veterinario.h"
 
-1409276539 source:c:\users\aula e3\documents\codeblocks worspace\clinicaveterinaria\fecha.cpp
+1409366312 source:c:\users\aula e3\documents\codeblocks worspace\clinicaveterinaria\fecha.cpp
 	<iostream>
 	"Fecha.h"
 
-1409275748 c:\users\aula e3\documents\codeblocks worspace\clinicaveterinaria\fecha.h
-
-1409279413 source:c:\users\aula e3\documents\poo-cic\c++\clinicaveterinaria\main.cpp
-	<iostream>
-	"Fecha.h"
-
-1409278819 source:c:\users\aula e3\documents\poo-cic\c++\clinicaveterinaria\fecha.cpp
-	<iostream>
-	"Fecha.h"
-
-1409279387 c:\users\aula e3\documents\poo-cic\c++\clinicaveterinaria\fecha.h
+1409366142 c:\users\aula e3\documents\codeblocks worspace\clinicaveterinaria\fecha.h
 	<iostream>
 
-1409279157 source:c:\users\aula e3\documents\poo-cic\c++\clinicaveterinaria\util.cpp
-	<iostream>
-	"Fecha.h"
-
-1409338592 source:c:\users\dan-lap\documents\poo-cic\c++\clinicaveterinaria\main.cpp
-	<iostream>
-	"Fecha.h"
-
-1409347799 c:\users\dan-lap\documents\poo-cic\c++\clinicaveterinaria\fecha.h
-	<iostream>
-
-1409338592 source:c:\users\dan-lap\documents\poo-cic\c++\clinicaveterinaria\util.cpp
-	<iostream>
-	"Fecha.h"
-
-1409345196 source:c:\users\dan-lap\documents\poo-cic\c++\clinicaveterinaria\animal.cpp
-	<iostream>
-	"Animal.h"
-
-1409347786 c:\users\dan-lap\documents\poo-cic\c++\clinicaveterinaria\animal.h
-	<iostream>
-	"Fecha.h"
-
-1409345127 source:c:\users\dan-lap\documents\poo-cic\c++\clinicaveterinaria\fecha.cpp
-	<iostream>
-	"Fecha.h"
-
-1409347231 source:c:\users\dan-lap\documents\poo-cic\c++\clinicaveterinaria\perro.cpp
-	<iostream>
-	"Perro.h"
-
-1409347786 c:\users\dan-lap\documents\poo-cic\c++\clinicaveterinaria\perro.h
-	<iostream>
-	"Animal.h"
-
-1409347927 source:c:\users\dan-lap\documents\poo-cic\c++\clinicaveterinaria\veterinario.cpp
+1409365969 source:c:\users\aula e3\documents\codeblocks worspace\clinicaveterinaria\veterinario.cpp
 	<iostream>
 	"Veterinario.h"
 
-1409347927 c:\users\dan-lap\documents\poo-cic\c++\clinicaveterinaria\veterinario.h
+1409365165 c:\users\aula e3\documents\codeblocks worspace\clinicaveterinaria\veterinario.h
 	<iostream>
-	"Animal.h"
 	"Fecha.h"
 

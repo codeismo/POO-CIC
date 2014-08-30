@@ -14,6 +14,7 @@ private:
 public:
     /*************** CONSTRUCTORES ***************/
     Fecha();
+    Fecha(int d, int m, int a);
     /************* GETTERS Y SETTERS *************/
     int setDia(int d);/*De 1 a 31*/
     int setMes(int m);/*De 1 a 12*/

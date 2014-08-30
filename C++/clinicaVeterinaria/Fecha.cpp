@@ -5,9 +5,15 @@ using namespace std;
 
 
 Fecha::Fecha(){
-    setDia(1);
-    setMes(1);
-    setAnio(1920);
+    this->setDia(1);
+    this->setMes(1);
+    this->setAnio(1920);
+}
+Fecha::Fecha(int d, int m, int a){
+    cout<<"Constructor Fecha con argumentos"<<endl;
+    this->setDia(d);
+    this->setMes(m);
+    this->setAnio(a);
 }
 
 /*De 1 a 31
