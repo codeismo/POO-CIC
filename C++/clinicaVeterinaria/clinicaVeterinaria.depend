@@ -19,3 +19,23 @@
 	<iostream>
 	"Fecha.h"
 
+1409366723 source:c:\users\aula e3\documents\poo-cic\c++\clinicaveterinaria\fecha.cpp
+	<iostream>
+	"Fecha.h"
+
+1409366142 c:\users\aula e3\documents\poo-cic\c++\clinicaveterinaria\fecha.h
+	<iostream>
+
+1409366625 source:c:\users\aula e3\documents\poo-cic\c++\clinicaveterinaria\main.cpp
+	<iostream>
+	"Fecha.h"
+	"Veterinario.h"
+
+1409365165 c:\users\aula e3\documents\poo-cic\c++\clinicaveterinaria\veterinario.h
+	<iostream>
+	"Fecha.h"
+
+1409366723 source:c:\users\aula e3\documents\poo-cic\c++\clinicaveterinaria\veterinario.cpp
+	<iostream>
+	"Veterinario.h"
+
