@@ -33,16 +33,22 @@ void tirar(){
    tablero[posicion] = simbolo;
 }
 
-/*Revisa en el tablero y si alguien gana devuelve 1
+/***Revisa en el tablero y si alguien gana devuelve 1
 Si el tablero esta lleno devuelve 0 y si el juego
-continua devuelve 2*/
+continua devuelve 2***/
 int ganar(){
-
+    /**Gane horizontal 0-1-2*/
+    if(tablero[0]==tablero[1] && tablero[2]==tablero[0] && tablero[0]!='-'){
+        return 1;
+    }elseif(){
+    /**Gane horizontal 3-4-5*/
+    }
 }
 
 
 int main(){
     imprimir_tablero();
     tirar();
+    imprimir_tablero();
     return 0;
 }
