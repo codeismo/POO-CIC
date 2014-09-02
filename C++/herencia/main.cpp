@@ -84,6 +84,18 @@ Pollo::Pollo(string n, int e):Animal(n, e){
 void Pollo::comer(){
     cout<<"pio pio"<<endl;
 }
+/*** ***/
+class Mutante:public Gato, Pollo{
+public:
+    Mutante();
+    Mutante(int a, string c, string n, int e );
+    int antenas;
+};
+
+Mutante::Mutante(int a, string c, string n, int e ):Gato(c, n, e){
+    antenas = a;
+}
+
 int main()
 {
     Gato gatito("amarillo", "Felix", 3);
@@ -92,5 +104,8 @@ int main()
     Pollo pollito("Piolin", 1);
     cout<<"Nombre del Pollo "<<pollito.getNombre()<<endl;
     pollito.comer();
+    Mutante mounstro(3, "rojo", "alebrije", 100);
+    cout<<"El mutante se llama "<<mounstro.getNombre()<<endl;
+    mounstro.comer();
     return 0;
 }
