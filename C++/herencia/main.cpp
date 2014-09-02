@@ -76,9 +76,9 @@ public:
     Pollo(string n, int e);
     void comer();
 };
-Pollo::Pollo(){
-    nombre = "Pollito";
+Pollo::Pollo():Animal("Pollito", 0){
 }
+
 Pollo::Pollo(string n, int e):Animal(n, e){
 }
 void Pollo::comer(){
@@ -89,5 +89,8 @@ int main()
     Gato gatito("amarillo", "Felix", 3);
     gatito.mostrarInfo();
     gatito.comer();
+    Pollo pollito("Piolin", 1);
+    cout<<"Nombre del Pollo "<<pollito.getNombre()<<endl;
+    pollito.comer();
     return 0;
 }
