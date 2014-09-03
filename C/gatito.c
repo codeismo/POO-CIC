@@ -2,12 +2,12 @@
 /*El tablero es una variable global*/
 char tablero[9] = {'-', '-', '-', '-', '-', '-', '-', '-', '-'};
 
-/*Imprime el tablero así
+/***Imprime el tablero así
 - - -
 - - -
 - - -
 
-*/
+***/
 void imprimir_tablero(){
     int posicion;
     for(posicion=0; posicion<9; posicion++){
@@ -21,18 +21,34 @@ void imprimir_tablero(){
 /*Pide al usuario la posicion y el simbolo para tirar
 modifica el tablero con el tiro del jugador*/
 void tirar(){
-
+    int posicion;
+    char simbolo;
+    /***pedir al usuario simbolo tirar ***/
+    printf("\nSímbolo de tiro ( x , o): ");
+    scanf("%c", &simbolo);
+    /***pedir al usuario posicion para tirar ***/
+    printf("\nPosicion de tiro (0-8): ");
+    scanf("%d", &posicion);
+    //modificar el tablero
+   tablero[posicion] = simbolo;
 }
 
-/*Revisa en el tablero y si alguien gana devuelve 1
+/***Revisa en el tablero y si alguien gana devuelve 1
 Si el tablero esta lleno devuelve 0 y si el juego
-continua devuelve 2*/
+continua devuelve 2***/
 int ganar(){
-
+    /**Gane horizontal 0-1-2*/
+    if(tablero[0]==tablero[1] && tablero[2]==tablero[0] && tablero[0]!='-'){
+        return 1;
+    }elseif(){
+    /**Gane horizontal 3-4-5*/
+    }
 }
 
 
 int main(){
+    imprimir_tablero();
+    tirar();
     imprimir_tablero();
     return 0;
 }
