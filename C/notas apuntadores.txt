@@ -1,0 +1,9 @@
+int numero = 10;
+int *ptrNumero = &numero;
+
+ptrNumero -- Hace referencia a la direccion de memoria
+		FF09D2 
+*ptrNumero  -- Hace referencia a lo que está en la direccion 
+	    de memoria 10
+	    y nos permite sobreescribir lo que esta en esa 
+		direccion

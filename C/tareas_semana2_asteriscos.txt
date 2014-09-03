@@ -1,9 +1,11 @@
-         *****
-      *****
-    *****
- *****
+       ***** 3 espacios, 5 asteriscos, 1 salto de linea
+     *****   2 espacios, 5 asteriscos, 1 salto de linea
+   *****     1 espacio, 5 asteriscos, 1 salto de linea
+ *****       0 espacios, 5 asteriscos, 1 salto de lines
 
-      *   
-    ***
-  *****
-*******
+      *      	3 espacios, 1 asterisco.   salto de linea
+    ***	2 espacio, 3 asteriscos, salto de linea
+  *****	1 espacios, 5 ateriscos, salto de linea
+*******    0 espacios, 7 asteriscos, salto de linea
+espacios disminuyen en una unidad
+aumenta en 2 unidades
