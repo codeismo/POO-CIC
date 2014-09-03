@@ -8,7 +8,10 @@ Perro::Perro(){
 
 }
 /*Constructor con argumentos de la clase Perro*/
-
+Perro::Perro(string r, string n, Fecha fn, int e):
+    Animal(n, fn, e){
+    raza = r;
+}
 /************* GETTERS Y SETTERS *************/
 
 string Perro::getRaza(){
@@ -25,4 +28,12 @@ int Perro::setRaza( string r ){
 Cuando el perro esta sano ladra*/
 void Perro::ladrar(){
 
+    cout<<"perro va a ladrar:"<<enfermo;
+    cout<<"perro va a ladrar(this):"<<this->enfermo;
+
+    if(enfermo == 1){
+        cout<<"auuuuuuuuu"<<endl;
+    }else{
+        cout<<"guaf guaf"<<endl;
+    }
 }

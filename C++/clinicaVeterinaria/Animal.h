@@ -5,9 +5,11 @@
 #define ANIMAL_H_INCLUDED
 
 class Animal{
+    friend class Veterinario;
 private:
     string nombre;
     Fecha fechaNacimiento;
+protected:
     int enfermo; /*1-enfermo y 0-sano*/
     void sanar();
 public:
@@ -22,7 +24,7 @@ public:
     int setFechaNacimiento( Fecha f );
     /************ METODOS DE FUNCIONALIDAD ***********/
     int setEnfermo(int e);
-        void enfermar();
+    void enfermar();
     void imprimirDatos();
 };
 

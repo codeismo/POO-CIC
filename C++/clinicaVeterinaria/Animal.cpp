@@ -48,5 +48,5 @@ int Animal::setEnfermo(int e){
 /************ METODOS DE FUNCIONALIDAD ***********/
 
 void Animal::sanar(){
-    //con el keyword this llamar al metodo setEnfermo(0)
+    enfermo = 0;
 }

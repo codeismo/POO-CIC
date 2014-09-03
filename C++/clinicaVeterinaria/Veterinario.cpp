@@ -44,6 +44,9 @@ int Veterinario::setFechaContratacion( Fecha f ){
 
 /************ METODOS DE FUNCIONALIDAD ***********/
 
-void Veterinario::curarAnimal(Animal a){
+void Veterinario::curarAnimal(Animal& a){
 
+    //enfermo es protected, el veterinario solo puede
+    //accederlo si es amigo de Animal
+    a.enfermo=0;
 }
