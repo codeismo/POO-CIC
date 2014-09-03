@@ -1,4 +1,9 @@
 #include <stdio.h>
+
+void porReferenciaConst(const int *x){
+*x=2;
+}
+
 void apuntadores(){
     int x= 8;
 int *ptrX=&x;
