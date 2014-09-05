@@ -62,6 +62,22 @@ void estructuras(){
 	printf("Mi cliente 3 edad %f\n", viaje2.costo);
 }
 
+/*** Las estructuras pueden pasarse a funciones,
+pasando miembros individuales de la estructura, pasando una estructura
+completa o pasando un apuntador a una estructura ***/
+
+/*** typedef struct carta Carta;
+define el nuevo nombre de tipo Carta como un sinónimo del tipo struct carta.
+Los programadores en C con frecuencia utilizan typedef
+para definir tipos de estructuras,
+por lo que no se necesita una etiqueta para la estructura.
+typedef struct {
+char *cara;
+char *palo;
+} Carta;
+Carta mazo[ 52 ];
+***/
+
 int main(){
     //int y=0;
 	estructuras();

@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-int numeros[6]={5,6,0,4,3,1};
-
-void imprimir_arreglo(){
+void imprimir_arreglo( int numeros[6] ){
     int posicion;
     for(posicion=0; posicion<=5; posicion++){
         printf("%d", numeros[posicion]);
@@ -10,7 +8,7 @@ void imprimir_arreglo(){
     printf("\n");
 }
 /** original {5,6,0,4,3,1} **/
-void intercambiar_posiciones(int pos1, int pos2){
+void intercambiar_posiciones(int pos1, int pos2, int numeros[6]){
     pos1=1;
     pos2=2;
     int aux = numeros[pos1];
@@ -21,8 +19,9 @@ void intercambiar_posiciones(int pos1, int pos2){
 }
 
 int main(){
-    imprimir_arreglo();
-    intercambiar_posiciones(1,2);
-    imprimir_arreglo();
+    int numeros[6]={5,6,0,4,3,1};
+    imprimir_arreglo( numeros );
+    intercambiar_posiciones(1,2, numeros);
+    imprimir_arreglo( numeros );
     return 0;
 }
