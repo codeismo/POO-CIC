@@ -6,7 +6,9 @@
 
 package poo_java;
 
-import com.codeismo.Animal;
+import com.codeismo.animales.Animal;
+import com.codeismo.animales.Ave;
+import com.codeismo.animales.Perro;
 
 /**
  *
@@ -20,8 +22,14 @@ public class POO_Java {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Hola Mundo");
+        /*No se pueden crear instancias de clases abstractas
         Animal animalito = new Animal();
-        animalito.imprimirDatos();
+        animalito.imprimirDatos();*/
+        
+        Perro perrito = new Perro();
+        Ave pollito = new Ave();
+        perrito.ladrar("Guafff ");
+        pollito.cantar();
     }
     
 }
