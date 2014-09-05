@@ -6,6 +6,8 @@
 
 package poo_java;
 
+import com.codeismo.Animal;
+
 /**
  *
  * @author Aula E3
@@ -18,6 +20,8 @@ public class POO_Java {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Hola Mundo");
+        Animal animalito = new Animal();
+        animalito.imprimirDatos();
     }
     
 }
