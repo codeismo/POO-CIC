@@ -10,7 +10,7 @@ package com.codeismo.Personas;
  *
  * @author Aula E3
  */
-public class ProfesorInterino extends Profesor{
+public class ProfesorInterino extends Profesor implements Cuotas{
     protected int duracioncontrato;
     
     /*** Constructores ***/
@@ -36,6 +36,21 @@ public class ProfesorInterino extends Profesor{
     
     @Override
     public void informacionBasica() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void pagarSeguroMedico() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void aplicarDescuento() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void aplicarRecargos() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

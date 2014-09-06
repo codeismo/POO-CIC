@@ -10,7 +10,7 @@ package com.codeismo.Personas;
  *
  * @author Aula E3
  */
-public class ProfesorDeBase extends Profesor{
+public class ProfesorDeBase extends Profesor implements Beneficios{
     /*** Atributos ***/
     protected int antiguedad;
 
@@ -40,6 +40,21 @@ public class ProfesorDeBase extends Profesor{
     
     @Override
     public void informacionBasica() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void irAlCineClub() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void irAlComedor() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void tomarClasesMustra() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
