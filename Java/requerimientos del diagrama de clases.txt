@@ -1,0 +1,5 @@
+Todas las clases;
+	1)constructor por default
+	2)constructor con argumentos
+	3)Metodos Get
+	4)Metodos Set
