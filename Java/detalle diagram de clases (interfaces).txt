@@ -1,0 +1,2 @@
+**La interfas Beneficios se implementa en Alumno y ProfesorDeBase
+**La interfas Cuotas se implementa en Alumno y ProfesorTemporal

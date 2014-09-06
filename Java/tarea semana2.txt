@@ -1,0 +1,7 @@
+-Tener al meno 3 niveles de herencia
+-al menos 2 interfaces
+-al menos una clase que implemente 2 interfaces
+-al menos 2 clases abstractas cada uno con 1 metodo abstracto 
+y uno normal
+
+//Diagrama de clases y su implementacion en Java
