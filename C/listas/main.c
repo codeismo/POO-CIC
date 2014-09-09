@@ -12,6 +12,16 @@ struct Viaje{
 };
 
 int main(){
-    /*Crear una estructura de tipo cliente*/
+    /*Declarando e inicializando
+     una estructura de tipo Cliente y Viaje*/
+    struct Cliente unCliente = {"Daniela", 30};
+    struct Viaje paseo = {unCliente, "Acapulco", 3};
+    //Usando la variable paseo imprime el
+    //nombre del cliente
+
     return 0;
 }
+
+
+
+
