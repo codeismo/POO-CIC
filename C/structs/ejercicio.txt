@@ -1,0 +1,12 @@
+1)Agregar una estructura Reservacion con los miembros:
+-hotel: arreglo de caracteres
+-costo: flotante
+
+2)A la estructura viaje agregar in miembro reservacion
+
+3)Declara e inicializar una variable de tipo estructura Reservacion
+
+4)Usando la variable del tipo estructuta viaje imprime:
+	-destino de del viaje
+	-nombre y edad del cliente
+	-hotel y costo de la reservacion
