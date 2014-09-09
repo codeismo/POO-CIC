@@ -20,9 +20,12 @@ int main(){
     struct Viaje paseo = {unCliente, "Acapulco", 3};
     //imprimir el destino usando viaje
     printf("Destino: %s \n", paseo.destino );
+    //imprimir el nobre del cliente usando unCliente
+    printf("Nombre (desde la estructura cliente): %s \n", unCliente.nombre);
     //Usando la variable paseo imprime el
     //nombre del cliente
-
+    printf("Nombre (desde la estructura paseo):");
+    printf("%s", paseo.cliente.nombre);
 
     return 0;
 }
