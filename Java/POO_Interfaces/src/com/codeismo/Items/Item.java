@@ -14,15 +14,20 @@ public class Item {
     protected String id;
     protected boolean disponible;
     protected String titulo;
-    /** CONSTRUCTORES **/
-    public Item() {
-    }
 
+    /** CONSTRUCTORES **/
+    
+    public Item() {
+        this.id = "0000";
+        this.disponible = true;
+        this.titulo = "Ninguno";
+    }
+    
     public Item(String id, boolean disponible, String titulo) {
         this.id = id;
         this.disponible = disponible;
         this.titulo = titulo;
-    }
+    }  
 
     /** GETTERS Y SETTERS **/
     public String getId() {
@@ -47,9 +52,5 @@ public class Item {
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
-    }
-
-    
-    
-    
+    }   
 }

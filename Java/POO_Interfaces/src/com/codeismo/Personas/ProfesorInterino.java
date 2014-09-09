@@ -6,6 +6,8 @@
 
 package com.codeismo.Personas;
 
+import java.util.Date;
+
 /**
  *
  * @author Aula E3
@@ -15,12 +17,15 @@ public class ProfesorInterino extends Profesor implements Cuotas{
     
     /*** Constructores ***/
     public ProfesorInterino() {
+        super();
         this.duracioncontrato = 0;
     }
 
-    public ProfesorInterino(int duracioncontrato) {
+    public ProfesorInterino(int duracioncontrato, int numeroEmpleado, float sueldo, Date fechaDeContratacion, String nombre, int edad, String direccion) {
+        super(numeroEmpleado, sueldo, fechaDeContratacion, nombre, edad, direccion);
         this.duracioncontrato = duracioncontrato;
     }
+
     /*** Getters y Setters
      * @return  ***/
     public int getDuracioncontrato() {
@@ -32,25 +37,35 @@ public class ProfesorInterino extends Profesor implements Cuotas{
     }
     /*** Metodos de la Clase ***/
     public void extenderContrato(){
+        this.duracioncontrato = 2 * this.duracioncontrato;
+        System.out.println("Profesor interino" + this.nombre + " extiende contrato" );
     }
     
     @Override
     public void informacionBasica() {
+        System.out.println("INFORMACIÓN PROFESOR DE INTERINO");
+        System.out.println("Nombre: " + this.nombre);
+        System.out.println("Edad " + this.edad);
+        System.out.println("Direccion " + this.direccion);
+        System.out.println("Duración de contrato " + this.duracioncontrato);
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void pagarSeguroMedico() {
+        System.out.println("Profesor interino" + this.nombre + " paga servicio medico" );
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void aplicarDescuento() {
+        System.out.println("Profesor interino" + this.nombre + " aplica descuentos" );
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void aplicarRecargos() {
+        System.out.println("Profesor interino" + this.nombre + " aplica recargos" );
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

@@ -20,12 +20,14 @@ public abstract class Profesor extends Persona{
 
     /** Constructores **/
     public Profesor() {
+        super();
         this.numeroEmpleado = 0;
         this.sueldo = 0;
         this.fechaDeContratacion = new Date();
     }
 
-    public Profesor(int numeroEmpleado, float sueldo, Date fechaDeContratacion) {
+    public Profesor(int numeroEmpleado, float sueldo, Date fechaDeContratacion, String nombre, int edad, String direccion) {
+        super(nombre, edad, direccion);
         this.numeroEmpleado = numeroEmpleado;
         this.sueldo = sueldo;
         this.fechaDeContratacion = fechaDeContratacion;
@@ -58,7 +60,6 @@ public abstract class Profesor extends Persona{
     
     /*** metodos de la clase ***/
     public void darClase(){
-    
+        System.out.println("Profesor" + this.nombre + " dando clase" );
     }
-    
 }

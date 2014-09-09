@@ -15,7 +15,10 @@ public class Alumno extends Persona implements Beneficios, Cuotas{
     public String grupo; 
     
     /** Constructores **/
-   public Alumno() {
+    public Alumno() {
+        super();
+        this.boleta = 0000;
+        this.grupo = "TC1A";
     }
 
     
@@ -44,44 +47,56 @@ public class Alumno extends Persona implements Beneficios, Cuotas{
 
     /*** Metodos de la Clase ***/
     public void inscribir(){
-    
+        System.out.println("Inscribiendo alumno" + this.nombre);
     }
     public void darDeBaja(){
+        System.out.println("Dando de baja alumno" + this.nombre);
     }
-    
     
     @Override
     public void informacionBasica() {
+        System.out.println("INFORMACIÓN ALUMNO");
+        System.out.println("Nombre: " + this.nombre);
+        System.out.println("Edad" + this.edad);
+        System.out.println("Direccion" + this.direccion);
+        System.out.println("Boleta" + this.boleta);
+        System.out.println("Grupo" + this.grupo);
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void irAlCineClub() {
+        System.out.println("Alumno" + this.nombre + "va al cineclub" );
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void irAlComedor() {
+        System.out.println("Alumno" + this.nombre + "va al comedor" );
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void tomarClasesMustra() {
+        System.out.println("Alumno" + this.nombre + "toma clase" );
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void pagarSeguroMedico() {
+        System.out.println("Alumno" + this.nombre + " paga seguro médico" );
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void aplicarDescuento() {
+        System.out.println("Alumno" + this.nombre + " aplica descuento" );
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void aplicarRecargos() {
+        System.out.println("Alumno" + this.nombre + " aplica recargas" );
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
