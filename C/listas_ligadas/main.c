@@ -2,11 +2,12 @@
 
 struct unNodo{
     int valor;
-    struct unNodo *ptrNodo;
+    struct unNodo *ptrSiguiente;
 };
 
 /**En lugar de usar "struct unNodo" usaremos "nodo" ALIAS**/
-typedef struct unNodo nodo;
+typedef struct unNodo nodo; /** Nodo **/
+typedef nodo *ptrNodo;      /** Apuntador a un Nodo **/
 
 void ejercicio(){
     /** MALLOC Recibe cantidad de memoria que se solicita
@@ -41,8 +42,28 @@ void tamVariables(){
     printf("La nueva direccion ahora tiene %d\n", *ptrMemoriaAsiganada);
 }
 
+/** Recibe el valor a insertar y
+un apuntador al ultimo nodo **/
+void insertarNodo(int valor, ptrNodo *ptrUltimo ){
+    int tamNodo = sizeof( nodo );
+    /** Solcito memoria**/
+    nodo *ptrNuevoNodo = malloc( tamNodo );
+    /** Asiganamos los valores del nodo**/
+    (*ptrNuevoNodo).valor = valor;
+    (*ptrNuevoNodo).ptrSiguiente = ptrUltimo;
+    /** El nuevo nodo sera el ultimo**/
+    ptrUltimo = ptrNuevoNodo;
+}
+
+void imprimeLista( ptrNodo *ptrUltimo ){
+
+}
+
 int main()
 {
-    ejercicio();
+    /** Inicilamente el nodo ultimo es NULL **/
+    ptrNodo ultimo = NULL;
+    insertarNodo( 8, &ultimo );
+    imprimir( &ultimo );
     return 0;
 }
