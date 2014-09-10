@@ -1,0 +1,9 @@
+1.-Hacer un programa que usando malloc obtenga la cantidad
+de memoria necesaria para almacenar un caracter
+2.-Imprimir la DIRECCION obtenida y el su CONTENIDO
+3.-Hacer que la direccion sea la misma pero tenga una f
+4.-Imprime el nuevo la valor CONTENIDO en la memoria asignada
+5.-Declara una variable 
+	char letra = 'p'
+6.-Has que la direccion asiganda sea la de la variable letra 
+7.-4.-Imprime el nuevo la valor CONTENIDO en la memoria asignada
