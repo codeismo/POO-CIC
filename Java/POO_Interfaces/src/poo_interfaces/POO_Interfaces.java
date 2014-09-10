@@ -6,8 +6,8 @@
 
 package poo_interfaces;
 
-import com.codeismo.Personas.Alumno;
-import com.codeismo.Personas.Persona;
+import com.codeismo.Personas.*;
+import java.util.Date;
 
 /**
  *
@@ -19,10 +19,26 @@ public class POO_Interfaces {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        //creo un alumno
-        Alumno alumno1 = new Alumno();
-        Persona alumno2 = new Alumno();
+       //Crear un Alumno
+        Alumno alumno1 = new Alumno(201456, "1TCV", "Daniela", "Av.IPN 40", 30);
+        alumno1.informacionBasica();
+        ProfesorDeBase profe1 = new ProfesorDeBase(2, 666, 8000, new Date(), "Juanito", 40, "calle 7 #45");
+        profe1.informacionBasica();
+        /** POLIMORFISMO DE A DEVERAS **/
+        Persona profe, alumno;
+        profe = new ProfesorDeBase();
+        alumno = new Alumno();
+        profe.informacionBasica();
+        alumno.informacionBasica();
+        /** pruebas de clases **/
+        Persona personaDePrueba;
+        personaDePrueba = new Alumno();
+        personaDePrueba.informacionBasica();
     }
+    
+    
+    
+    
+    
     
 }

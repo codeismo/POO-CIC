@@ -7,7 +7,7 @@
 package com.codeismo.Personas;
 
 import java.util.Date;
-
+import com.codeismo.util.Calculos;
 /**
  *
  * @author Aula E3
@@ -18,7 +18,7 @@ public class ProfesorInterino extends Profesor implements Cuotas{
     /*** Constructores ***/
     public ProfesorInterino() {
         super();
-        this.duracioncontrato = 0;
+        this.duracioncontrato = Calculos.mesesContrato;
     }
 
     public ProfesorInterino(int duracioncontrato, int numeroEmpleado, float sueldo, Date fechaDeContratacion, String nombre, int edad, String direccion) {
@@ -36,8 +36,13 @@ public class ProfesorInterino extends Profesor implements Cuotas{
         this.duracioncontrato = duracioncontrato;
     }
     /*** Metodos de la Clase ***/
-    public void extenderContrato(){
-        this.duracioncontrato = 2 * this.duracioncontrato;
+    public void extenderContrato(int meses){
+        Calculos misCalculos = new Calculos();
+        //llame a un metodo desde una instancia
+        int nuevaDuracion = misCalculos.incrementarMeses(this.duracioncontrato, meses);
+        this.duracioncontrato = nuevaDuracion;
+        //llame aun metodo estatico
+        this.duracioncontrato = Calculos.aumentaMeses(this.duracioncontrato);
         System.out.println("Profesor interino" + this.nombre + " extiende contrato" );
     }
     
@@ -48,7 +53,7 @@ public class ProfesorInterino extends Profesor implements Cuotas{
         System.out.println("Edad " + this.edad);
         System.out.println("Direccion " + this.direccion);
         System.out.println("Duración de contrato " + this.duracioncontrato);
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override

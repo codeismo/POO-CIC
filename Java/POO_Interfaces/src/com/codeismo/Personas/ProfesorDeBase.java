@@ -49,7 +49,7 @@ public class ProfesorDeBase extends Profesor implements Beneficios{
         System.out.println("Edad" + this.edad);
         System.out.println("Direccion" + this.direccion);
         System.out.println("Antiguedad" + this.antiguedad);
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+      //  throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override

@@ -61,7 +61,7 @@ public class Alumno extends Persona implements Beneficios, Cuotas{
         System.out.println("Direccion" + this.direccion);
         System.out.println("Boleta" + this.boleta);
         System.out.println("Grupo" + this.grupo);
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
