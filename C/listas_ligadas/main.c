@@ -50,20 +50,46 @@ void insertarNodo(int valor, ptrNodo *ptrUltimo ){
     nodo *ptrNuevoNodo = malloc( tamNodo );
     /** Asiganamos los valores del nodo**/
     (*ptrNuevoNodo).valor = valor;
-    (*ptrNuevoNodo).ptrSiguiente = ptrUltimo;
+    (*ptrNuevoNodo).ptrSiguiente = *ptrUltimo;
     /** El nuevo nodo sera el ultimo**/
-    ptrUltimo = ptrNuevoNodo;
+    *ptrUltimo = ptrNuevoNodo;
 }
 
-void imprimeLista( ptrNodo *ptrUltimo ){
-
+void imprimeLista( ptrNodo ptrActual ){
+    while( ptrActual != NULL ){
+        printf("Valor %d \n", (*ptrActual).valor );
+        ptrActual = (*ptrActual).ptrSiguiente;
+    }
+    printf("\n\n");
 }
+
+/***Saca a el ultimo que entro***/
+void sacarComoPila(ptrNodo *ptrUltimo){
+    /** Obtener la direcion del nodo a eliminar **/
+    ptrNodo nodoAEliminar = *ptrUltimo;
+    /** Hacer que ptrUltimo avance **/
+    /** (*ptrUltimo) acceso ala direccion del ultimo
+    nodo **/
+    /** (*(*ptrUltimo)) acceso a lo que esta en la
+    direccion del ultimo nodo (LA estructura)**/
+    *ptrUltimo = (*(*ptrUltimo)).ptrSiguiente;
+    /** Liberamos la memoria del nodo a eliminar **/
+    free( nodoAEliminar );
+}
+
+/***Saca al primero que entro***/
+void sacarComoCola(){}
+
 
 int main()
 {
     /** Inicilamente el nodo ultimo es NULL **/
     ptrNodo ultimo = NULL;
     insertarNodo( 8, &ultimo );
-    imprimir( &ultimo );
+    insertarNodo( 10, &ultimo );
+    insertarNodo( 6, &ultimo );
+    imprimeLista( ultimo );
+    sacarComoPila( &ultimo );
+    imprimeLista( ultimo );
     return 0;
 }
