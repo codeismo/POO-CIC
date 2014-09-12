@@ -10,11 +10,24 @@ package com.codeismo.Vehiculos;
  *
  * @author Telmexhub
  */
-public class Terrestre {
+public abstract class Terrestre extends Vehiculo{
     /** Atributos **/
     protected int kilometraje;
     protected int llantas;
     
+    /** Constructores **/
+    public Terrestre() {
+        super();
+        this.kilometraje = 100000;
+        this.llantas = 2;
+    }
+
+    public Terrestre(int kilometraje, int llantas, int modelo, String marca, boolean descompuesto) {
+        super(modelo, marca, descompuesto);
+        this.kilometraje = kilometraje;
+        this.llantas = llantas;
+    }
+
     /** Getters y Setters **/
     public int getKilometraje() {
         return kilometraje;

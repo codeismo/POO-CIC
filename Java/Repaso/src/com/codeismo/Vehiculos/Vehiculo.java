@@ -10,13 +10,25 @@ package com.codeismo.Vehiculos;
  *
  * @author Telmexhub
  */
-public class Vehiculo {
+public abstract class Vehiculo {
     /** Atrbutos **/
     protected int modelo;
     protected String marca;
     protected boolean descompuesto;
     
-    /** Getters y Setters **/
+    /** Constructores **/
+    public Vehiculo() {
+        this.modelo = 1990;
+        this.marca = "VW";
+        this.descompuesto = true;
+    }
+
+    public Vehiculo(int modelo, String marca, boolean descompuesto) {
+        this.modelo = modelo;
+        this.marca = marca;
+        this.descompuesto = descompuesto;
+    }
+
     public int getModelo() {
         return modelo;
     }
@@ -42,7 +54,7 @@ public class Vehiculo {
     }
 
     /** Metodos Abstractos **/
-    
+    public abstract void moverser();
     
     /** Metodos de la Clase **/
     public void averiarse(){
